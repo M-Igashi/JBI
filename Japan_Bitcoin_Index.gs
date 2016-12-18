@@ -1,26 +1,26 @@
 // Data import from Public APIs
 var bfdata = UrlFetchApp.fetch('https://api.bitflyer.jp/v1/getticker?product_code=BTC_JPY');
-var bfprice = JSON.parse(bfdata)["ltp"];
+var bfprice = Math.floor(JSON.parse(bfdata)["ltp"]);
 var bfvolume = Math.floor(JSON.parse(bfdata)["volume_by_product"]);
 var bf = {'price' : bfprice, 'volume' : bfvolume};
 
 var qndata = UrlFetchApp.fetch('https://api.quoine.com/products/5');
-var qnprice = JSON.parse(qndata)["last_traded_price"];
+var qnprice = Math.floor(JSON.parse(qndata)["last_traded_price"]);
 var qnvolume = Math.floor(JSON.parse(qndata)["volume_24h"]);
 var qn = {'price' : qnprice, 'volume' : qnvolume};
 
 var bbdata = UrlFetchApp.fetch('https://www.btcbox.co.jp/api/v1/ticker/');
-var bbprice = JSON.parse(bbdata)["last"];
+var bbprice = Math.floor(JSON.parse(bbdata)["last"]);
 var bbvolume = Math.floor(JSON.parse(bbdata)["vol"]);
 var bb = {'price' : bbprice, 'volume' : bbvolume};
 
 var zfdata = UrlFetchApp.fetch('https://api.zaif.jp/api/1/ticker/btc_jpy');
-var zfprice = JSON.parse(zfdata)["last"];
+var zfprice = Math.floor(JSON.parse(zfdata)["last"]);
 var zfvolume = Math.floor(JSON.parse(zfdata)["volume"]);
 var zf = {'price' : zfprice, 'volume' : zfvolume};
 
 var ccdata = UrlFetchApp.fetch('https://coincheck.com/api/ticker');
-var ccprice = JSON.parse(ccdata)["last"];
+var ccprice = Math.floor(JSON.parse(ccdata)["last"]);
 var ccvolume = Math.floor(JSON.parse(ccdata)["volume"]);
 var cc = {'price' : ccprice, 'volume' : ccvolume};
 
