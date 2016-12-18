@@ -45,7 +45,7 @@ var weight  = function(arr) {
 
 var JBI = Math.floor(weight(market)/sum(market))
 
-var Date = Utilities.formatDate(new Date(), "JST", "dd/MM/YYYY ' ' HH:mm");
+var Date = Utilities.formatDate(new Date(), "JST", "YYYY-MM-dd ' ' HH:mm");
 
 function doGet(e) { 
   if(!e.parameter.option) { 
