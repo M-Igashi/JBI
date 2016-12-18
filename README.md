@@ -8,13 +8,13 @@ JBI is intended to serve as a standard retail price reference for industry parti
 - Price reference for commercial transaction between individuals and merchant.
 - Price reference for micro-payment among individuals.
 - Ticker for websites.
-- Benchmark for index funds e.c. ETF  
+- Benchmark for index funds e.c. ETF. 
 
 ## Calculation
 
-1. Selecting top 5 Japanese btc markets who have own JPY-BTC ticker, are able to deposit and withdraw JPY.  
+1. Selecting top 5 Japanese btc markets who have own JPY-BTC ticker, are able to deposit and withdraw JPY.
 2. Taking last traded price and 24 hours trading volume of actuals from the top 5 Japanese btc markets' public APIs, and round off decimals to simplify the calculation.
-3. Caluculating volume waighted average price from the data above.  
+3. Caluculating volume waighted average price from the data above.
 
 - The 5 markets are called by their volume share, and will be reviewed annually, end of each year.
 - JBI historical data commenced on 16 December 2016, and recorded every 5 minutes.
@@ -35,5 +35,5 @@ with `?option=market` gives JBI with market data of calculation base.
 
 The project is licenced as MIT license.  There are no restrictions for forks, reutilizations and other forms of implementation as long as those keep the characteristics of index: sources and calucuration base.
 
-Please feel free to use JBI and its code. If you have any queries, please drop a message to [@M_Igashi](twitter.com/M_Igashi) by twitter.
+Please feel free to use JBI and its code. If you have any queries, please drop a message to [@M_Igashi](https://twitter.com/M_Igashi) by twitter.
 
