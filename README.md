@@ -33,7 +33,7 @@ with `?option=market` gives JBI with market data of calculation base.
 
 ## Useage of code
 
-The project is licenced as MIT license.  There are no restrictions for forks, reutilizations and other forms of implementation as long as those keep the characteristics of index: sources and calucuration base.
+The project is licenced as MIT license.  There are no restrictions for forks, reutilizations and other forms of implementation as long as those keep the characteristics of index: data sources and calucuration base.
 
 Please feel free to use JBI and its code. If you have any queries, please drop a message to [@M_Igashi](https://twitter.com/M_Igashi) by twitter.
 
