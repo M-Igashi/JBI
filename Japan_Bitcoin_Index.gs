@@ -59,17 +59,20 @@ function doGet(e) {
    } 
 }
 
-function createContent(callback , returnObject ) { 
+
+function createContent(callback , returnObject ) { //JSONまたはJSONPの文字列を返します
+  if(callback) {
+    return ContentService.createTextOutput(callback + '(' + JSON.stringify(returnObject) + ')').setMimeType(ContentService.MimeType.JAVASCRIPT);
+  } else {
     return ContentService.createTextOutput(JSON.stringify(returnObject)).setMimeType(ContentService.MimeType.JSON);
+  }  
 }
-
-
 
 
 function createIndex() {
   var tableId = "1POJbJLZSkPnz1RUQYcQnXR2a7kdmdIO1ZJ6odve-"
   var sql = "INSERT INTO " + tableId
-   + " ('JPbtc_index','Date')"
+   + " ('JBI','Date')"
    + " VALUES ('" + JBI + "','" + Date + "')";
   FusionTables.Query.sql(sql);
 };
