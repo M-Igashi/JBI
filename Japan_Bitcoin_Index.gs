@@ -53,7 +53,7 @@ function doGet(e) {
   }
   switch(e.parameter.option) { 
     case "market":
-      return createContent(e.parameter.callback , {JBI : JBI, Date : Date, bitFlyer: bf, Quoine: qn, BitBox: bb, Zaif: zf, coincheck: cc});
+      return createContent(e.parameter.callback , {JBI : JBI, Date : Date, bitFlyer: bf, Quoine: qn, BtcBox: bb, Zaif: zf, coincheck: cc});
     default : 
       return createContent(e.parameter.callback , {JBI : JBI, Date : Date});
    } 
