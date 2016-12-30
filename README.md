@@ -29,8 +29,7 @@ https://www.google.com/fusiontables/DataSource?docid=1POJbJLZSkPnz1RUQYcQnXR2a7k
 
 Web API end point which gives realtime JBI and its time stamp is;  
 https://script.google.com/macros/s/AKfycbxHoGcej3QbKLdw0vF5qoijwD5n9dZNP-N2DzLM7AiuqzuYTTE/exec  
-with `?option=market` gives JBI with market data of calculation base.
-
+with `?option=market` gives JBI with market data of calculation base.  Please note: since this API is implemented in Googl Apps Script, [https://developers.google.com/apps-script/guides/content#redirects](the API serves from redirected one-time URL), so please configure your HTTPS client to follow the redirect. For Node.js, you can use [https://github.com/olalonde/follow-redirects](this module)
 ## Useage of code
 
 The project is licenced as MIT license.  There are no restrictions for forks, reutilizations and other forms of implementation as long as those keep the characteristics of index: data sources and calucuration base.
