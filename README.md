@@ -25,7 +25,7 @@ JBI is intended to serve as a standard retail price reference for industry parti
 The script is written as Google Apps Script function aiming to record the index in Fusion Tables and provide Web API.  
 
 To access the histrical data table;  
-https://www.google.com/fusiontables/DataSource?docid=1POJbJLZSkPnz1RUQYcQnXR2a7kdmdIO1ZJ6odve-  
+https://www.google.com/fusiontables/DataSource?docid=1Ci5IUvYy_59-wIU751i6Xc7x7R2yxaq6Yxei1O7I  
 
 Web API end point which gives realtime JBI and its time stamp is;  
 https://script.google.com/macros/s/AKfycbxHoGcej3QbKLdw0vF5qoijwD5n9dZNP-N2DzLM7AiuqzuYTTE/exec  
