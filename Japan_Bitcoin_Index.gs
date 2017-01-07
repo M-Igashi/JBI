@@ -26,7 +26,7 @@ var cc = {'price' : ccprice, 'volume' : ccvolume};
 
 var market = [bf, qn, bb, zf, cc];
 
-//Weighteen average
+//Weighted average
 var sum  = function(arr) {
     var sum = 0;
     for (var i=0,len=arr.length; i<len; ++i) {
@@ -45,7 +45,7 @@ var weight  = function(arr) {
 
 var JBI = Math.floor(weight(market)/sum(market))
 
-var Date = Utilities.formatDate(new Date(), "JST", "YYYY-MM-dd ' ' HH:mm");
+var Date = Utilities.formatDate(new Date(), "JST", "YYYY/MM/dd HH:mm");
 
 function doGet(e) { 
   if(!e.parameter.option) { 
@@ -70,7 +70,7 @@ function createContent(callback , returnObject ) { //JSONまたはJSONPの文字
 
 
 function createIndex() {
-  var tableId = "1POJbJLZSkPnz1RUQYcQnXR2a7kdmdIO1ZJ6odve-"
+  var tableId = "1ND0DoTEBFwAFs1fimnsRbyW3cXESUvisFSIBPjs_"
   var sql = "INSERT INTO " + tableId
    + " ('JBI','Date')"
    + " VALUES ('" + JBI + "','" + Date + "')";
